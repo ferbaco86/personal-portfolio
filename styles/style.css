@@ -233,7 +233,7 @@ nav {
 
 .mockup-pics {
   width: 900px;
-  
+  padding-top: 5%;
 }
 
 .btn-container {
@@ -253,6 +253,14 @@ nav {
   
   /* background: grey no-repeat center/cover url("../images/Netlify-Logo.png"); */
   
+}
+
+.newsweek-container {
+  background-color: greenyellow;
+}
+
+.project-title {
+  font-size: 2.5em;
 }
 
 .hide-text {
