@@ -1,0 +1,260 @@
+/* CSS RESET */
+
+/* Box sizing rules */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+  list-style: none;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* colors */
+
+:root {
+  --nav-bg-color: #e0ebe8;
+  --nav-links-color: #b8b6b2;
+  --highlight-color: #fa6000;
+  --text-color: #f0ebeb;
+  --text-color-dark: #4d443e;
+}
+
+/* display */
+
+.pos-rel {
+  position: relative;
+}
+
+.pos-abs {
+  position: absolute;
+}
+
+.d-flex {
+  display: flex !important;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.j-content-center {
+  justify-content: center;
+}
+
+.a-items-center {
+  align-items: center;
+}
+
+.j-content-between {
+  justify-content: space-between;
+}
+
+.j-content-evenly {
+  justify-content: space-evenly;
+}
+
+.j-content-around {
+  justify-content: space-around;
+}
+
+.j-content-end {
+  justify-content: flex-end;
+}
+
+.f-grow-1 {
+  flex-grow: 1;
+}
+
+.pad-X-20 {
+  padding: 0 20%;
+}
+
+.pad-Y-5 {
+  padding: 5% 0;
+}
+
+.mar-X-20 {
+  margin: 0 20%
+}
+
+.mar-center {
+  margin: 0 auto;
+}
+
+.ml-5 {
+  margin-left: 5%;
+}
+
+.ml-10 {
+  margin-left: 10%;
+}
+
+.ml-15 {
+  margin-left: 15%;
+}
+
+.ml-20 {
+  margin-left: 20%;
+}
+
+.ml-25 {
+  margin-left: 25%;
+}
+
+.ml-30 {
+  margin-left: 30%;
+}
+
+.ml-40 {
+  margin-left: 40%;
+}
+
+.mt-5 {
+  margin-top: 5%;
+}
+
+.mt-10 {
+  margin-top: 10%;
+}
+
+.mt-15 {
+  margin-top: 15%;
+}
+
+.mt-20 {
+  margin-top: 20%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+nav {
+  background-color: var(--nav-bg-color);
+}
+
+.logo {
+  width: 100px;
+}
+
+.nav-right {
+  width: max-content;
+}
+
+.nav-center {
+  text-align: center;
+}
+
+.my-name-title {
+  font-size: 4em;
+}
+
+.about-container {
+  align-self: flex-start;
+}
+
+.pic-container {
+
+}
+
+.recent-work-desc {
+  background-color: var(--nav-bg-color);
+  text-align: center;
+}
+
+.mockup-pics {
+  width: 900px;
+  
+}
+
+.btn-container {
+  
+}
+
+.btn {
+  background-color: goldenrod;
+  border-radius: 5px;
+  padding: 1em 1.8em;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+}
+
+.netlify-btn {
+  
+  /* background: grey no-repeat center/cover url("../images/Netlify-Logo.png"); */
+  
+}
+
+.hide-text {
+  display: none;
+}
