@@ -126,6 +126,10 @@ select {
   flex-grow: 1;
 }
 
+.pad-X-15 {
+  padding: 0 15%;
+}
+
 .pad-X-20 {
   padding: 0 20%;
 }
@@ -202,6 +206,13 @@ nav {
   background-color: var(--nav-bg-color);
 }
 
+.fa-github-square,
+.fa-linkedin,
+.fa-twitter-square {
+  text-decoration: none;
+  color:blue;
+}
+
 .logo {
   width: 100px;
 }
@@ -212,6 +223,7 @@ nav {
 
 .nav-center {
   text-align: center;
+  font-size: 2em;
 }
 
 .my-name-title {
@@ -257,6 +269,10 @@ nav {
 
 .newsweek-container {
   background-color: greenyellow;
+}
+
+.tweetbot-container {
+  background-color: honeydew;
 }
 
 .project-title {

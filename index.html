@@ -9,26 +9,28 @@
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/media.css">
     <link rel="shortcut icon" href="./images/fav-icon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/17f821a36f.js" crossorigin="anonymous"></script>
     <title>Hi! I'm Fernando Bahamondes</title>
   </head>
   <body>
-    <nav class="d-flex a-items-center j-content-between pad-X-20">
+    <nav class="d-flex a-items-center j-content-between pad-X-15">
       <div class ="nav-left f-grow-1">
         <img src="../images/logo-placeholder.png" alt="logo placeholder" class="logo">
       </div>
       <div class="nav-center f-grow-1">
-        <a href="#" class="ml-5">GitHub</a>
-        <a href="#" class="ml-5">Linkedin</a>
-        <a href="#" class="ml-5">Twitter</a>        
+        <a href="https://github.com/ferbaco86" class="ml-5"><i class="fab fa-github-square"></i></a>
+        <a href="https://www.linkedin.com/in/fernando-bahamondes-correa/" class="ml-5"><i class="fab fa-linkedin"></i></a>
+        <a href="https://twitter.com/ferbac0" class="ml-5"><i class="fab fa-twitter-square"></i></a>        
       </div>
-      <div class="nav-right d-flex j-content-end f-grow-1">
-        <a href="#">About</a>
-        <a href="#" class="ml-5">Projects</a>
+      <div class="nav-right d-flex j-content-end a-items-center f-grow-1">
+        <a href="#about">About</a>
+        <a href="#work" class="ml-5">Projects</a>
+        <a href="#" class="ml-5 btn">Contact Me</a>
        
       </div>
     </nav>
     <main class="d-flex flex-column a-items-center ">
-      <div class="d-flex mar-X-20">
+      <div class="d-flex mar-X-20" id="about">
         <div class="d-flex flex-column about-container mt-15">
           <h1 class="my-name-title">
             I'm Fernando
@@ -53,12 +55,12 @@
           <img src="https://via.placeholder.com/450" alt="image placeholder">
         </div>
       </div>
-      <div class="recent-work-desc full-width pad-Y-5 mt-5">
+      <div class="recent-work-desc full-width pad-Y-5 mt-5" id="work">
         <h2>Recent Work</h2>
         <h3>Here's a selection of my latest work</h3>
         <img src="../images/logo-placeholder.png" alt="logo placeholder" class="logo mar-center">
       </div>
-      <article class="d-flex flex-column a-items-center full-width">
+      <article class="d-flex flex-column a-items-center full-width pad-X-15">
         <img src="../images/games-con.png" alt="Video Games Conference Website" class="mockup-pics">
         <div class="d-flex flex-column a-items-center mt-5">
           <h1 class="project-title">Video GamesCon: Conference Website </h1>
@@ -70,7 +72,7 @@
           <a class ="btn ml-5" href="https://github.com/ferbaco86/conference-webpage">GitHub Repo</a>
         </div>
       </article>
-      <article class="d-flex flex-column a-items-center mt-5 newsweek-container full-width">
+      <article class="d-flex flex-column a-items-center newsweek-container full-width pad-X-15">
         <img src="../images/newsweek-clone.png" alt="Newsweek Website Clone" class="mockup-pics">
         <div class="d-flex flex-column a-items-center mt-5">
           <h1 class="project-title">Newsweek Website Clone</h1>
@@ -80,6 +82,28 @@
         <div class="pad-Y-5 full-width text-align-center btn-container">
           <a class ="btn" href="https://newsweek-main-clone.netlify.app/">Live Version</a>
           <a class ="btn ml-5" href="https://github.com/ferbaco86/Newsweek-clone">GitHub Repo</a>
+        </div>
+      </article>
+      <article class="d-flex flex-column a-items-center tweetbot-container full-width pad-X-15">
+        <img src="../images/TweetBot.gif" alt="Tweet Bot animation showing hot it works" class="mockup-pics">
+        <div class="d-flex flex-column a-items-center mt-5">
+          <h1 class="project-title">Random Movie Twitter Bot</h1>
+          <p class="mt-5">A Twitter bot that recommends a movie based on the genre that the user tweets.</p> 
+          <p>Created with Ruby.</p>
+        </div>
+        <div class="pad-Y-5 full-width text-align-center btn-container">
+          <a class ="btn" href="https://github.com/ferbaco86/Random-Movie-Twitter-Bot">GitHub Repo</a>
+        </div>
+      </article>
+      <article class="d-flex flex-column a-items-center geeksden-container full-width pad-X-15">
+        <img src="../images/geeksden.png" alt="Newsweek Website Clone" class="mockup-pics">
+        <div class="d-flex flex-column a-items-center mt-5">
+          <h1 class="project-title">Geek's Den</h1>
+          <p class="mt-5">Geek's Den is an entertainment news website created using Ruby on Rails.</p> 
+          <p>Based on the design idea by Nelson Sakwa on Behance (https://www.behance.net/gallery/14554909/liFEsTlye-Mobile-version).</p>
+        </div>
+        <div class="pad-Y-5 full-width text-align-center btn-container">
+          <a class ="btn" href="https://github.com/ferbaco86/Random-Movie-Twitter-Bot">GitHub Repo</a>
         </div>
       </article>
     </main>
