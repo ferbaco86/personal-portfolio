@@ -217,13 +217,12 @@ nav {
   width: 100px;
 }
 
-.nav-right {
-  width: max-content;
+.logo-social {
+  width: 50px;
 }
 
-.nav-center {
-  text-align: center;
-  font-size: 2em;
+.nav-right {
+  width: max-content;
 }
 
 .my-name-title {
