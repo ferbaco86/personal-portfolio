@@ -140,6 +140,10 @@ select {
   padding: 0 20%;
 }
 
+.pad-Y-2 {
+  padding: 2% 0;
+}
+
 .pad-Y-5 {
   padding: 5% 0;
 }
@@ -216,8 +220,27 @@ select {
   text-align: center;
 }
 
+.slideUp {
+  -webkit-transform: translateY(-100px);
+  transform: translateY(-100px);
+  transition: transform .5s ease-out;
+}
+
+.slideDown {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  transition: transform .5s ease-out;
+}
+
+.header-navigation {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
 nav {
-  background-color: var(--nav-bg-color);
+  background-color: rgba(247, 244, 233, 0.7);
   color: var(--text-color);
 }
 
@@ -313,6 +336,10 @@ h2 {
 
 .logo-social {
   width: 50px;
+}
+
+.logo-social-link:hover {
+  transform: scale(1.2);
 }
 
 .nav-right {
