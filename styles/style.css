@@ -39,7 +39,10 @@ body {
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'B612', sans-serif;
+  color: var(--text-color);
+  background-color: #1d1d2c;
+  /* font-family: 'IBM Plex Serif', serif; */
 }
 
 /* A elements that don't have a class get default styles */
@@ -69,11 +72,17 @@ select {
 /* colors */
 
 :root {
-  --nav-bg-color: #e0ebe8;
-  --nav-links-color: #b8b6b2;
-  --highlight-color: #fa6000;
+  --nav-bg-color: #f7f4e9;
   --text-color: #f0ebeb;
-  --text-color-dark: #4d443e;
+  --text-color-dark: #1d1d2c;
+  --highlight-projects-blue: #3cbcc3;
+  --highlight-projects-red: #e40c2b;
+  --highlight-projects-yellow: #eba63f;
+  --highlight-projects-alt: #438945;
+
+
+
+
 }
 
 /* display */
@@ -138,6 +147,10 @@ select {
   padding: 5% 0;
 }
 
+.pad-Y-10 {
+  padding: 10% 0;
+}
+
 .mar-X-20 {
   margin: 0 20%
 }
@@ -174,6 +187,10 @@ select {
   margin-left: 40%;
 }
 
+.mt-2 {
+  margin-top: 2%;
+}
+
 .mt-5 {
   margin-top: 5%;
 }
@@ -204,13 +221,11 @@ select {
 
 nav {
   background-color: var(--nav-bg-color);
+  color: var(--text-color);
 }
 
-.fa-github-square,
-.fa-linkedin,
-.fa-twitter-square {
-  text-decoration: none;
-  color:blue;
+h2 {
+  font-size: 2.5em;
 }
 
 .logo {
@@ -226,20 +241,76 @@ nav {
 }
 
 .my-name-title {
-  font-size: 4em;
+  font-size: 5em;
 }
 
-.about-container {
-  align-self: flex-start;
+.section-about {
+  min-height: 700px;
+  min-width: 600px;
+  overflow-x: hidden;
 }
 
 .pic-container {
+  max-width: 600px;
+  overflow-x: hidden;
+}
 
+.about-container-stack {
+  font-size: 1.3em;
+  align-self: center;
+  text-align: center;
+}
+
+.logos-animation {
+  max-width: none;
+  animation: bg-animation 3s steps(33) forwards;
+}
+
+/* .section-about::before {
+  content: "";
+  top: 35%;
+  background-image: url("../images/Logos_Anim_600x400.png");
+  position: absolute;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: bg-animation 3s steps(33) forwards;
+} */
+
+ 
+ @keyframes bg-animation {
+  from { 
+   
+    -webkit-transform: translateX(0);
+    transform:translateX(0);
+   
+  }
+ 
+  to {
+    
+    -webkit-transform: translateX(-19800px);
+    transform: translateX(-19800px);
+  }
+   
+ }
+
+.logos-anim {
+  max-height: 500px;
 }
 
 .recent-work-desc {
+  color: var(--text-color-dark);
   background-color: var(--nav-bg-color);
   text-align: center;
+}
+
+.conference-container {
+  background-color: var(--highlight-projects-alt);
+}
+
+.geeksden-container {
+  background-color: var(--highlight-projects-yellow);
 }
 
 .mockup-pics {
@@ -267,11 +338,11 @@ nav {
 }
 
 .newsweek-container {
-  background-color: greenyellow;
+  background-color: var(--highlight-projects-red);
 }
 
 .tweetbot-container {
-  background-color: honeydew;
+  background-color: var(--highlight-projects-blue);
 }
 
 .project-title {

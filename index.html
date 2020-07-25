@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/media.css">
     <link rel="shortcut icon" href="./images/fav-icon.png" type="image/x-icon">
-    <script src="https://kit.fontawesome.com/17f821a36f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=B612:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;600;700&display=swap" rel="stylesheet"> 
     <title>Hi! I'm Fernando Bahamondes</title>
   </head>
   <body>
@@ -30,37 +32,38 @@
       </div>
     </nav>
     <main class="d-flex flex-column a-items-center ">
-      <div class="d-flex mar-X-20" id="about">
+      <section class="d-flex flex-column a-items-center pad-X-15 section-about" id="about">
         <div class="d-flex flex-column about-container mt-15">
           <h1 class="my-name-title">
             I'm Fernando
           </h1>
-          <h3 class="stack-title">
-            a Full-Stack Web Developer
-          </h3>
-          <h3 class="tech-title">
-            my prefered technologies are:
-          </h3>
-          <div class="tech-skills">
-            <h3>
-              front end > HTML, CSS, Javascript, React
-            </h3>
-            <h3>
-              back end > Ruby, Ruby on Rails
-            </h3>
+          <div class="about-container-stack">
+            <p class="stack-title">
+              a Full-Stack Web Developer
+            </p>
+            <p class="tech-title">
+              my prefered technologies are:
+            </p>
+            <div class="tech-skills">
+              <p>
+                front end > HTML, CSS, Javascript, React
+              </p>
+              <p>
+                back end > Ruby, Ruby on Rails
+              </p>
           </div>
-          
+          </div>  
         </div>
-        <div class="mt-5 pic-container">
-          <img src="https://via.placeholder.com/450" alt="image placeholder">
+        <div class="pic-container">
+          <img class="logos-animation" src="./images/Logos Animation_600x400_white.png" alt="HTML,CSS,Javascript,React,Rails logos animation">
         </div>
-      </div>
-      <div class="recent-work-desc full-width pad-Y-5 mt-5" id="work">
+      </section>
+      <div class="recent-work-desc full-width pad-Y-10 mt-5" id="work">
         <h2>Recent Work</h2>
-        <h3>Here's a selection of my latest work</h3>
-        <img src="../images/logo-placeholder.png" alt="logo placeholder" class="logo mar-center">
+        <p class="mt-2">Here's a selection of my latest work</p>
+        <img src="../images/keyboard_bg_3.png" alt="keyboard pixel art" class="logo mt-2 mar-center">
       </div>
-      <article class="d-flex flex-column a-items-center full-width pad-X-15">
+      <article class="conference-container d-flex flex-column a-items-center full-width pad-X-15">
         <img src="../images/games-con.png" alt="Video Games Conference Website" class="mockup-pics">
         <div class="d-flex flex-column a-items-center mt-5">
           <h1 class="project-title">Video GamesCon: Conference Website </h1>
@@ -95,7 +98,7 @@
           <a class ="btn" href="https://github.com/ferbaco86/Random-Movie-Twitter-Bot">GitHub Repo</a>
         </div>
       </article>
-      <article class="d-flex flex-column a-items-center geeksden-container full-width pad-X-15">
+      <article class="geeksden-container  d-flex flex-column a-items-center geeksden-container full-width pad-X-15">
         <img src="../images/geeksden.png" alt="Newsweek Website Clone" class="mockup-pics">
         <div class="d-flex flex-column a-items-center mt-5">
           <h1 class="project-title">Geek's Den</h1>
