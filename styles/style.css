@@ -6,6 +6,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  image-rendering: -webkit-optimize-contrast;
 }
 
 /* Remove default padding */
@@ -79,10 +80,6 @@ select {
   --highlight-projects-red: #e40c2b;
   --highlight-projects-yellow: #eba63f;
   --highlight-projects-alt: #438945;
-
-
-
-
 }
 
 /* display */
@@ -224,12 +221,94 @@ nav {
   color: var(--text-color);
 }
 
+.nav-links {
+  color: var(--text-color-dark);
+  text-decoration: none;
+}
+
+.nav-links:hover {
+  color: var(--highlight-projects-yellow);
+  text-decoration: underline;
+  text-decoration-color: var(--highlight-projects-alt);
+}
+
+.projects-links {
+  color: var(--text-color-dark);
+  text-decoration: none;
+}
+
+.projects-links:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--highlight-projects-red);
+}
+
 h2 {
   font-size: 2.5em;
 }
 
+.btn {
+  padding: 1em 1.8em;
+  text-decoration: none;
+  color: var(--text-color-dark);
+  font-weight: 700;
+}
+
+@supports (border-image-source: none) {
+  .pixel-btn {
+    border-radius: 14px;
+  }
+}
+
+.pixel-btn:active {
+  background-color: #f7d51d;
+  -webkit-box-shadow: inset 4px 4px #ebe4bd;
+          box-shadow: inset 4px 4px #ebe4bd;
+}
+
 .logo {
   width: 100px;
+}
+
+.pixel-btn {
+  border-style: solid;
+  border-width: 4px;
+  border-color: #a88f06;
+  border-image-slice: 2;
+  border-image-width: 1;
+  border-image-outset: 0;
+  border-image-source: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='6' height='6'><path d='M0 2h2v2H0zM2 0h2v2H2zM4 2h2v2H4zM2 4h2v2H2z' fill='%23a88f06' /></svg>");
+  position: relative;
+  background-color: #f7d51d;
+ }
+
+ .pixel-btn::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-box-shadow: inset -4px -4px #d9b908;
+          box-shadow: inset -4px -4px #d9b908;
+ }
+
+ .pixel-btn:hover {
+  color: var(--text-color-dark);
+  text-decoration:none;
+  background-color:#f2c409;
+ }
+
+ .pixel-btn:hover::after {
+  box-shadow:inset -6px -6px #d9b908;
+ }
+
+ .pixel-btn:active::after {
+  box-shadow:inset 4px 4px #ebe4bd;
+ }
+ 
+
+.icon {
+  width: 150px;
 }
 
 .logo-social {
@@ -265,19 +344,6 @@ h2 {
   max-width: none;
   animation: bg-animation 3s steps(33) forwards;
 }
-
-/* .section-about::before {
-  content: "";
-  top: 35%;
-  background-image: url("../images/Logos_Anim_600x400.png");
-  position: absolute;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  animation: bg-animation 3s steps(33) forwards;
-} */
-
  
  @keyframes bg-animation {
   from { 
@@ -316,25 +382,6 @@ h2 {
 .mockup-pics {
   width: 900px;
   padding-top: 5%;
-}
-
-.btn-container {
-  
-}
-
-.btn {
-  background-color: goldenrod;
-  border-radius: 5px;
-  padding: 1em 1.8em;
-  text-decoration: none;
-  color: #fff;
-  font-weight: 700;
-}
-
-.netlify-btn {
-  
-  /* background: grey no-repeat center/cover url("../images/Netlify-Logo.png"); */
-  
 }
 
 .newsweek-container {
