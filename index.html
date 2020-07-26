@@ -8,9 +8,8 @@
     <meta property="og:url" content="https://conference-main.netlify.app/" />-->
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/media.css">
-    <link rel="shortcut icon" href="./images/fav-icon.png" type="image/x-icon">
+    <link rel="icon" type="image/png" href="./images/fav-icon.png" />
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"> -->
-    <script type="text/javascript" src="/javascript/nav_scroll.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=B612:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;600;700&display=swap" rel="stylesheet"> 
     <title>Hi! I'm Fernando Bahamondes</title>
@@ -18,10 +17,10 @@
   <body>
     <header class="header-navigation" id="header">
       <nav class="d-flex a-items-center j-content-between pad-X-15">
-        <div class ="nav-left f-grow-1">
-          <img src="../images/logo-placeholder.png" alt="logo placeholder" class="logo">
+        <div class ="nav-left">
+         <a href="/index.html"><img src="../images/portrait_logo.png" alt="pixel art portrait logo" class="logo"></a>
         </div>
-        <div class="nav-center f-grow-1 d-flex j-content-end">
+        <div class="nav-center d-flex j-content-end">
           <a href="https://github.com/ferbaco86" target ="_blank" class="ml-5 logo-social-link"><img class="logo-social" src="./images/social_logos_github.png" alt="github logo pixel art"></a>
           <a href="https://www.linkedin.com/in/fernando-bahamondes-correa/" class="ml-5 logo-social-link"><img class="logo-social" src="./images/social_logos_linkedin.png" alt="linkedin logo pixel art"></a>
           <a href="https://twitter.com/ferbac0" class="ml-5"><img class="logo-social logo-social-link" src="./images/social_logos_twitter.png" alt="twitter logo pixel art"></a>        
@@ -30,8 +29,13 @@
           <a class="nav-links" href="#about">About</a>
           <a href="#work" class="ml-5 nav-links">Projects</a>
           <a href="mailto:fernando.bahamondes.correa@gmail.com" class="ml-5 pixel-btn btn">Contact Me</a>
-        
         </div>
+        <div class="nav-right-mobile d-flex j-content-end a-items-center f-grow-1 hide-text">
+          <a href="#work" target ="_blank" class="ml-5 logo-social-link"><img class="logo-social" src="./images/social_logos_portfolio.png" alt="portfolio logo pixel art"></a>
+          <a href="mailto:fernando.bahamondes.correa@gmail.com" class="ml-5 logo-social-link"><img class="logo-social" src="./images/social_logos_openmail.png" alt="mail logo pixel art"></a>
+          
+        </div>
+        
       </nav>
     </header>
     <main class="d-flex flex-column a-items-center mt-2">
@@ -63,17 +67,17 @@
       </section>
       <div class="recent-work-desc full-width pad-Y-10 mt-5" id="work">
         <h2>Recent Work</h2>
-        <p class="mt-2">Here's a selection of my latest projects.</p>
-        <p>If you want to check all my work, feel free to check my GitHub profile</p>
-        <img src="../images/Keyboard_icon_pixel_art.png" alt="keyboard pixel art" class="icon mt-2 mar-center">
+        <p class="mt-2 text-align-center">Here's a selection of my latest projects.</p>
+        <p class="d-flex j-content-center a-items-center">If you want to check all my work, feel free to check my GitHub profile<a href="https://github.com/ferbaco86" target ="_blank" class="logo-social-link"><img class="logo-social" src="./images/social_logos_github.png" alt="github logo pixel art"></a></p>
+        <img src="./images/Keyboard_icon_pixel_art-export.png" alt="keyboard pixel art" class="icon mt-2 mar-center">
       </div>
       <article class="geeksden-container  d-flex flex-column a-items-center geeksden-container full-width pad-X-15">
         <img src="../images/pixel-geeksden.png" alt="Newsweek Website Clone" class="mockup-pics">
         <div class="d-flex flex-column a-items-center mt-5">
-          <h1 class="project-title">Geek's Den</h1>
-          <p class="mt-5">Geek's Den is an entertainment news website created using Ruby on Rails and PostgreSQL.</p>
-          <p>Currently not mobile friendly.</p>
-          <p>Based on the design idea by<a class="projects-links" href="https://www.behance.net/gallery/14554909/liFEsTlye-Mobile-version" target="_blank"> Nelson Sakwa on Behance</a></p>
+          <h1 class="project-title text-align-center">Geek's Den</h1>
+          <p class="mt-5 text-align-center">Geek's Den is an entertainment news website created using Ruby on Rails and PostgreSQL.</p>
+          <p class="text-align-center">Currently not mobile friendly.</p>
+          <p class="text-align-center">Based on the design idea by<a class="projects-links" href="https://www.behance.net/gallery/14554909/liFEsTlye-Mobile-version" target="_blank"> Nelson Sakwa on Behance</a></p>
         </div>
         <div class="pad-Y-5 full-width text-align-center btn-container">
           <a class ="pixel-btn btn" href="https://geeksden.herokuapp.com" target="_blank">Live Version</a>
@@ -83,9 +87,9 @@
       <article class="d-flex flex-column a-items-center tweetbot-container full-width pad-X-15">
         <img src="../images/TweetBot.gif" alt="Tweet Bot animation showing hot it works" class="mockup-pics">
         <div class="d-flex flex-column a-items-center mt-5">
-          <h1 class="project-title">Random Movie Twitter Bot</h1>
-          <p class="mt-5">A Twitter bot that recommends a movie based on the genre that the user tweets.</p> 
-          <p>Created with Ruby.</p>
+          <h1 class="project-title text-align-center">Random Movie Twitter Bot</h1>
+          <p class="mt-5 text-align-center">A Twitter bot that recommends a movie based on the genre that the user tweets.</p> 
+          <p class="text-align-center">Created with Ruby.</p>
         </div>
         <div class="pad-Y-5 full-width text-align-center btn-container">
           <a class ="pixel-btn btn" href="https://github.com/ferbaco86/Random-Movie-Twitter-Bot" target="_blank">GitHub Repo</a>
@@ -94,9 +98,9 @@
       <article class="conference-container d-flex flex-column a-items-center full-width pad-X-15">
         <img src="../images/pixel-conference.png" alt="Video Games Conference Website" class="mockup-pics">
         <div class="d-flex flex-column a-items-center mt-5">
-          <h1 class="project-title">Video GamesCon: Conference Website </h1>
-          <p class="mt-5">Front-end for a responsive website of a fictional Video Games Conference created using only HTML and CSS.</p> 
-          <p>Based on the design idea by<a a class="projects-links" href="https://www.behance.net/adagio07" target="_blank"> Cindy Shin on Behance</a></p>
+          <h1 class="project-title text-align-center">Video GamesCon: Conference Website </h1>
+          <p class="mt-5 text-align-center">Front-end for a responsive website of a fictional Video Games Conference created using only HTML and CSS.</p> 
+          <p class="text-align-center">Based on the design idea by<a a class="projects-links" href="https://www.behance.net/adagio07" target="_blank"> Cindy Shin on Behance</a></p>
         </div>
         <div class="pad-Y-5 full-width text-align-center btn-container">
           <a class ="pixel-btn btn" href="https://conference-main.netlify.app" target="_blank">Live Version</a>
@@ -106,9 +110,9 @@
       <article class="d-flex flex-column a-items-center newsweek-container full-width pad-X-15">
         <img src="../images/pixel-newsweek-clone.png" alt="Newsweek Website Clone" class="mockup-pics">
         <div class="d-flex flex-column a-items-center mt-5">
-          <h1 class="project-title">Newsweek Website Clone</h1>
-          <p class="mt-5">A fully responsive clone of the main webpage of the Newsweek Website.</p> 
-          <p>It was made using HTML, CSS and Bootstrap.</p>
+          <h1 class="project-title text-align-center">Newsweek Website Clone</h1>
+          <p class="mt-5 text-align-center">A fully responsive clone of the main webpage of the Newsweek Website.</p> 
+          <p class="text-align-center">It was made using HTML, CSS and Bootstrap.</p>
         </div>
         <div class="pad-Y-5 full-width text-align-center btn-container">
           <a class ="pixel-btn btn" href="https://newsweek-main-clone.netlify.app/" target="_blank">Live Version</a>

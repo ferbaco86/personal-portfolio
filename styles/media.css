@@ -1,0 +1,12 @@
+@media (max-width: 900px) {
+  .nav-right {
+    display: none !important;
+  }
+
+  .nav-right-mobile {
+    display: flex !important;
+    justify-content: end;
+    align-items: center;
+    flex-grow: 1;
+  }
+}

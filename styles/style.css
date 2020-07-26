@@ -216,6 +216,14 @@ select {
   height: 100%;
 }
 
+.nav-right-mobile {
+  display: none;
+}
+
+.navbar {
+  display: none;
+}
+
 .text-align-center {
   text-align: center;
 }
@@ -244,13 +252,17 @@ nav {
   color: var(--text-color);
 }
 
+.nav-center {
+  flex-grow: 2;
+}
+
 .nav-links {
   color: var(--text-color-dark);
   text-decoration: none;
 }
 
 .nav-links:hover {
-  color: var(--highlight-projects-yellow);
+  color: var(--highlight-projects-alt);
   text-decoration: underline;
   text-decoration-color: var(--highlight-projects-alt);
 }
@@ -290,6 +302,7 @@ h2 {
 
 .logo {
   width: 100px;
+  padding: 8%;
 }
 
 .pixel-btn {
@@ -340,6 +353,10 @@ h2 {
 
 .logo-social-link:hover {
   transform: scale(1.2);
+}
+
+.logo:hover {
+  transform: scale(1.1);
 }
 
 .nav-right {
@@ -424,5 +441,5 @@ h2 {
 }
 
 .hide-text {
-  display: none;
+  display: none !important;
 }
