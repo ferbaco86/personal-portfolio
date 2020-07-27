@@ -70,6 +70,10 @@ select {
   font: inherit;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 /* colors */
 
 :root {
@@ -373,7 +377,7 @@ h2 {
 }
 
 .section-about {
-  min-height: 700px;
+  min-height: 550px;
   min-width: 600px;
   overflow-x: hidden;
 }
