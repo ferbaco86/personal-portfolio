@@ -240,6 +240,10 @@ select {
   transition: transform .5s ease-out;
 }
 
+#menu-toggle {
+  display: none;
+}
+
 .header-navigation {
   position: fixed;
   top: 0;
@@ -351,7 +355,8 @@ h2 {
   width: 50px;
 }
 
-.logo-social-link:hover {
+.logo-social-link:hover,
+.icon:hover {
   transform: scale(1.2);
 }
 
@@ -381,7 +386,6 @@ h2 {
 .about-container-stack {
   font-size: 1.3em;
   align-self: center;
-  text-align: center;
 }
 
 .logos-animation {
@@ -413,6 +417,7 @@ h2 {
   color: var(--text-color-dark);
   background-color: var(--nav-bg-color);
   text-align: center;
+  padding: 10% 15%;
 }
 
 .conference-container {
@@ -424,7 +429,7 @@ h2 {
 }
 
 .mockup-pics {
-  width: 900px;
+  min-width: 300px;
   padding-top: 5%;
 }
 

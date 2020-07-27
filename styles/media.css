@@ -10,10 +10,145 @@
     z-index: 2;
   }
 
+  .menu-icon {
+    display: inline-block;
+    background-image: url("../images/menu-icon.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+
+  input:checked ~ .nav-mobile {
+    max-width: 100vw;
+  }
+
+  .mobile-menu-container {
+    max-width: 0;
+    overflow: hidden;
+    position: relative;
+    transition: max-width 0.5s ease-in-out;
+  }
+
   .nav-mobile {
     display: flex !important;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    max-width: 0;
+    transition: max-width 600ms ease;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    width: 50px;
+  }
+
+  .btn-container {
+    padding-bottom: 30%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btn-container > a:nth-child(2) {
+    margin-left: 0;
+    margin-top: 5%;
+  }
+  
+  .project-title {
+    font-size: 2em;
+  }
+
+  .mockup-pics {
+    margin-top: 15%;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .my-name-title {
+    font-size: 3.5em;
+  }
+
+  .about-container-stack {
+    font-size: 1em;
+  }
+
+  .logos-animation {
+    display: none;
+  }
+
+  .pic-container {
+    max-width: 400px;
+  }
+
+  .logos-animation-mobile-400px {
+    display: block !important;
+    max-width: none;
+    animation: bg-animation 3s steps(33) forwards;
+  }
+
+  .github-work {
+    display: none;
+  }
+
+  @keyframes bg-animation {
+    from { 
+     
+      -webkit-transform: translateX(0);
+      transform:translateX(0);
+     
+    }
+   
+    to {
+      
+      -webkit-transform: translateX(-13200px);
+      transform: translateX(-13200px);
+    }
+     
+   }
+}
+
+@media (max-width: 400px) {
+
+  .my-name-title {
+    font-size: 3em;
+  }
+
+  .about-container-stack {
+    padding: 0 5%;
+  }
+
+  .logos-animation-mobile-400px {
+    display: none !important;
+  }
+
+  .logos-animation-mobile-300px {
+    display: block !important;
+    max-width: none;
+    animation: bg-animation 3s steps(33) forwards;
+  }
+
+  @keyframes bg-animation {
+    from { 
+     
+      -webkit-transform: translateX(0);
+      transform:translateX(0);
+     
+    }
+   
+    to {
+      
+      -webkit-transform: translateX(-9900px);
+      transform: translateX(-9900px);
+    }
+     
+   }
+
+   .pic-container {
+    max-width: 300px;
   }
 }
