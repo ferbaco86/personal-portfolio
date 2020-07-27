@@ -1,0 +1,454 @@
+/* CSS RESET */
+
+/* Box sizing rules */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+  list-style: none;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family: 'B612', sans-serif;
+  color: var(--text-color);
+  background-color: #1d1d2c;
+  /* font-family: 'IBM Plex Serif', serif; */
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+html { 
+  overflow-x: hidden 
+} 
+
+/* colors */
+
+:root {
+  --nav-bg-color: #f7f4e9;
+  --text-color: #f0ebeb;
+  --text-color-dark: #1d1d2c;
+  --highlight-projects-blue: #3cbcc3;
+  --highlight-projects-red: #e40c2b;
+  --highlight-projects-yellow: #eba63f;
+  --highlight-projects-alt: #438945;
+}
+
+/* display */
+
+.pos-rel {
+  position: relative;
+}
+
+.pos-abs {
+  position: absolute;
+}
+
+.d-flex {
+  display: flex !important;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.j-content-center {
+  justify-content: center;
+}
+
+.a-items-center {
+  align-items: center;
+}
+
+.j-content-between {
+  justify-content: space-between;
+}
+
+.j-content-evenly {
+  justify-content: space-evenly;
+}
+
+.j-content-around {
+  justify-content: space-around;
+}
+
+.j-content-end {
+  justify-content: flex-end;
+}
+
+.f-grow-1 {
+  flex-grow: 1;
+}
+
+.pad-X-15 {
+  padding: 0 15%;
+}
+
+.pad-X-20 {
+  padding: 0 20%;
+}
+
+.pad-Y-2 {
+  padding: 2% 0;
+}
+
+.pad-Y-5 {
+  padding: 5% 0;
+}
+
+.pad-Y-10 {
+  padding: 10% 0;
+}
+
+.mar-X-20 {
+  margin: 0 20%
+}
+
+.mar-center {
+  margin: 0 auto;
+}
+
+.ml-5 {
+  margin-left: 5%;
+}
+
+.ml-10 {
+  margin-left: 10%;
+}
+
+.ml-15 {
+  margin-left: 15%;
+}
+
+.ml-20 {
+  margin-left: 20%;
+}
+
+.ml-25 {
+  margin-left: 25%;
+}
+
+.ml-30 {
+  margin-left: 30%;
+}
+
+.ml-40 {
+  margin-left: 40%;
+}
+
+.mt-2 {
+  margin-top: 2%;
+}
+
+.mt-5 {
+  margin-top: 5%;
+}
+
+.mt-10 {
+  margin-top: 10%;
+}
+
+.mt-15 {
+  margin-top: 15%;
+}
+
+.mt-20 {
+  margin-top: 20%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.nav-right-mobile {
+  display: none;
+}
+
+.navbar {
+  display: none;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.slideUp {
+  -webkit-transform: translateY(-100px);
+  transform: translateY(-100px);
+  transition: transform .5s ease-out;
+}
+
+.slideDown {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  transition: transform .5s ease-out;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.header-navigation {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+nav {
+  background-color: rgba(247, 244, 233, 0.7);
+  color: var(--text-color);
+}
+
+.nav-center {
+  flex-grow: 2;
+}
+
+.nav-links {
+  color: var(--text-color-dark);
+  text-decoration: none;
+}
+
+.nav-links:hover {
+  color: var(--highlight-projects-alt);
+  text-decoration: underline;
+  text-decoration-color: var(--highlight-projects-alt);
+}
+
+.projects-links {
+  color: var(--text-color-dark);
+  text-decoration: none;
+}
+
+.projects-links:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--highlight-projects-red);
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+.btn {
+  padding: 1em 1.8em;
+  text-decoration: none;
+  color: var(--text-color-dark);
+  font-weight: 700;
+}
+
+@supports (border-image-source: none) {
+  .pixel-btn {
+    border-radius: 14px;
+  }
+}
+
+.pixel-btn:active {
+  background-color: #f7d51d;
+  -webkit-box-shadow: inset 4px 4px #ebe4bd;
+          box-shadow: inset 4px 4px #ebe4bd;
+}
+
+.logo {
+  width: 100px;
+  padding: 8%;
+}
+
+.pixel-btn {
+  border-style: solid;
+  border-width: 4px;
+  border-color: #a88f06;
+  border-image-slice: 2;
+  border-image-width: 1;
+  border-image-outset: 0;
+  border-image-source: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='6' height='6'><path d='M0 2h2v2H0zM2 0h2v2H2zM4 2h2v2H4zM2 4h2v2H2z' fill='%23a88f06' /></svg>");
+  position: relative;
+  background-color: #f7d51d;
+ }
+
+ .pixel-btn::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-box-shadow: inset -4px -4px #d9b908;
+          box-shadow: inset -4px -4px #d9b908;
+ }
+
+ .pixel-btn:hover {
+  color: var(--text-color-dark);
+  text-decoration:none;
+  background-color:#f2c409;
+ }
+
+ .pixel-btn:hover::after {
+  box-shadow:inset -6px -6px #d9b908;
+ }
+
+ .pixel-btn:active::after {
+  box-shadow:inset 4px 4px #ebe4bd;
+ }
+ 
+
+.icon {
+  width: 150px;
+}
+
+.logo-social {
+  width: 50px;
+}
+
+.logo-social-link:hover,
+.icon:hover {
+  transform: scale(1.2);
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.nav-right {
+  width: max-content;
+}
+
+.my-name-title {
+  font-size: 5em;
+}
+
+.section-about {
+  min-height: 550px;
+  min-width: 600px;
+  overflow-x: hidden;
+}
+
+.pic-container {
+  max-width: 600px;
+  overflow-x: hidden;
+}
+
+.about-container-stack {
+  font-size: 1.3em;
+  align-self: center;
+}
+
+.logos-animation {
+  max-width: none;
+  animation: bg-animation 3s steps(33) forwards;
+}
+ 
+ @keyframes bg-animation {
+  from { 
+   
+    -webkit-transform: translateX(0);
+    transform:translateX(0);
+   
+  }
+ 
+  to {
+    
+    -webkit-transform: translateX(-19800px);
+    transform: translateX(-19800px);
+  }
+   
+ }
+
+.logos-anim {
+  max-height: 500px;
+}
+
+.recent-work-desc {
+  color: var(--text-color-dark);
+  background-color: var(--nav-bg-color);
+  text-align: center;
+  padding: 10% 15%;
+}
+
+.conference-container {
+  background-color: var(--highlight-projects-alt);
+}
+
+.geeksden-container {
+  background-color: var(--highlight-projects-yellow);
+}
+
+.mockup-pics {
+  min-width: 300px;
+  padding-top: 5%;
+}
+
+.newsweek-container {
+  background-color: var(--highlight-projects-red);
+}
+
+.tweetbot-container {
+  background-color: var(--highlight-projects-blue);
+}
+
+.project-title {
+  font-size: 2.5em;
+}
+
+.hide-text {
+  display: none !important;
+}

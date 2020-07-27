@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Fernando Bahamondes Portfolio">
+  <!-- <meta name="image" property="og:image" content="https://i.imgur.com/pFAR7nT.png">
+    <meta property="og:description" content="Webpage for a fictional Video Games Conference">
+    <meta property="og:url" content="https://conference-main.netlify.app/" />-->
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/media.css">
+    <link rel="icon" type="image/png" href="./images/fav-icon.png" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=B612:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;600;700&display=swap" rel="stylesheet"> 
+    <title>Hi! I'm Fernando Bahamondes</title>
+  </head>
+  <body>
+    <header class="header-navigation" id="header">
+      
+      <nav class="d-flex a-items-center j-content-between pad-X-15">
+        <div class ="nav-left">
+         <a href="/index.html"><img src="./images/portrait_logo.png" alt="pixel art portrait logo" class="logo"></a>
+        </div>
+        <div class="nav-center d-flex j-content-end">
+          <a href="https://github.com/ferbaco86" target ="_blank" class="ml-5 "><img class="logo-social logo-social-link" src="./images/social_logos_github_2.png" alt="github logo pixel art"></a>
+          <a href="https://www.linkedin.com/in/fernando-bahamondes-correa/" class="ml-5" target ="_blank"><img class="logo-social logo-social-link" src="./images/social_logos_linkedin.png" alt="linkedin logo pixel art"></a>
+          <a href="https://twitter.com/ferbac0" class="ml-5" target ="_blank"><img class="logo-social logo-social-link" src="./images/social_logos_twitter.png" alt="twitter logo pixel art"></a>        
+        </div>
+        <div class="nav-right d-flex j-content-end a-items-center f-grow-1">
+          <a class="nav-links" href="#about">About</a>
+          <a class="ml-5 nav-links" href="#work">Projects</a>
+          <a href="mailto:fernando.bahamondes.correa@gmail.com" class="ml-5 pixel-btn btn">Contact Me</a>
+        </div> 
+      </nav>
+    </header>
+   
+    <header class="header-navigation-mobile hide-text">
+      <input type="checkbox" name="menu-state" id="menu-toggle">
+      <label for="menu-toggle"><span class="menu-icon"></span></label>
+      <nav class="nav-mobile">
+        
+         <a href="/index.html"><img src="./images/portrait_logo.png" alt="pixel art portrait logo" class="logo"></a>
+        
+        
+          <a href="https://github.com/ferbaco86" target ="_blank" class="ml-5"><img class="logo-social logo-social-link" src="./images/social_logos_github_2.png" alt="github logo pixel art"></a>
+          <a href="https://www.linkedin.com/in/fernando-bahamondes-correa/" class="ml-5" target ="_blank"><img class="logo-social  logo-social-link" src="./images/social_logos_linkedin.png" alt="linkedin logo pixel art"></a>
+          <a href="https://twitter.com/ferbac0" class="ml-5" target ="_blank"><img class="logo-social logo-social-link" src="./images/social_logos_twitter.png" alt="twitter logo pixel art"></a>        
+        
+       
+          <a href="#work" class="ml-5"><img class="logo-social  logo-social-link" src="./images/social_logos_portfolio.png" alt="portfolio logo pixel art"></a>
+          <a href="mailto:fernando.bahamondes.correa@gmail.com" class="ml-5 "><img class="logo-social logo-social-link" src="./images/social_logos_openmail.png" alt="mail logo pixel art"></a> 
+        
+      </nav>
+    </header>
+    <main class="d-flex flex-column a-items-center mt-2">
+      <section class="d-flex flex-column a-items-center pad-X-15 section-about" id="about">
+        <div class="d-flex flex-column about-container mt-15">
+          <h1 class="my-name-title text-align-center">
+            I'm Fernando
+          </h1>
+          <div class="about-container-stack text-align-center">
+            <p class="stack-title">
+              a Full-Stack Web Developer
+            </p>
+            <p class="tech-title">
+              my prefered technologies are:
+            </p>
+            <div class="tech-skills">
+              <p>
+                front end > HTML, CSS, Javascript, React
+              </p>
+              <p>
+                back end > Ruby, Ruby on Rails
+              </p>
+          </div>
+          </div>  
+        </div>
+        <div class="pic-container">
+          <img class="logos-animation" src="./images/Logos Animation_600x400_white.png" alt="HTML,CSS,Javascript,React,Rails logos animation">
+          <img class="logos-animation-mobile-400px hide-text" src="./images/Logos Animation_400x370_white.png" alt="HTML,CSS,Javascript,React,Rails logos animation">
+          <img class="logos-animation-mobile-300px hide-text" src="./images/Logos Animation_300x235_white.png" alt="HTML,CSS,Javascript,React,Rails logos animation">
+        </div>
+      </section>
+      <div class="recent-work-desc full-width mt-5" id="work">
+        <h2>Recent Work</h2>
+        <p class="mt-2 text-align-center">Here's a selection of my latest projects.</p>
+        <p class="d-flex j-content-center a-items-center">If you want to check all my work, feel free to check my GitHub profile</p>
+        <a href="https://github.com/ferbaco86" target ="_blank">
+          <img src="./images/social_logos_github_2.png" alt="GitHub logo pixel art" class="icon mt-2 mar-center">
+        </a>
+      </div>
+      <article class="geeksden-container  d-flex flex-column a-items-center geeksden-container full-width pad-X-15">
+        <img src="./images/pixel-geeksden.png" alt="Newsweek Website Clone" class="mockup-pics">
+        <div class="d-flex flex-column a-items-center mt-5">
+          <h1 class="project-title text-align-center">Geek's Den</h1>
+          <p class="mt-5 text-align-center">Geek's Den is an entertainment news website created using Ruby on Rails and PostgreSQL.</p>
+          <p class="text-align-center">Currently not mobile friendly.</p>
+          <p class="text-align-center">Based on the design idea by<a class="projects-links" href="https://www.behance.net/gallery/14554909/liFEsTlye-Mobile-version" target="_blank"> Nelson Sakwa on Behance</a></p>
+        </div>
+        <div class="pad-Y-5 full-width text-align-center btn-container">
+          <a class ="pixel-btn btn" href="https://geeksden.herokuapp.com" target="_blank">Live Version</a>
+          <a class ="pixel-btn ml-5 btn" href="https://github.com/ferbaco86/rails-capstone" target="_blank">GitHub Repo</a>
+        </div>
+      </article>
+      <article class="d-flex flex-column a-items-center tweetbot-container full-width pad-X-15">
+        <img src="./images/TweetBot_pixel.gif" alt="Tweet Bot animation showing hot it works" class="mockup-pics">
+        <div class="d-flex flex-column a-items-center mt-5">
+          <h1 class="project-title text-align-center">Random Movie Twitter Bot</h1>
+          <p class="mt-5 text-align-center">A Twitter bot that recommends a movie based on the genre that the user tweets.</p> 
+          <p class="text-align-center">Created with Ruby.</p>
+        </div>
+        <div class="pad-Y-5 full-width text-align-center btn-container">
+          <a class ="pixel-btn btn" href="https://github.com/ferbaco86/Random-Movie-Twitter-Bot" target="_blank">GitHub Repo</a>
+        </div>
+      </article>
+      <article class="conference-container d-flex flex-column a-items-center full-width pad-X-15">
+        <img src="./images/pixel-conference.png" alt="Video Games Conference Website" class="mockup-pics">
+        <div class="d-flex flex-column a-items-center mt-5">
+          <h1 class="project-title text-align-center">Video GamesCon: Conference Website </h1>
+          <p class="mt-5 text-align-center">Front-end for a responsive website of a fictional Video Games Conference created using only HTML and CSS.</p> 
+          <p class="text-align-center">Based on the design idea by<a a class="projects-links" href="https://www.behance.net/adagio07" target="_blank"> Cindy Shin on Behance</a></p>
+        </div>
+        <div class="pad-Y-5 full-width text-align-center btn-container">
+          <a class ="pixel-btn btn" href="https://conference-main.netlify.app" target="_blank">Live Version</a>
+          <a class ="pixel-btn ml-5 btn" href="https://github.com/ferbaco86/conference-webpage" target="_blank">GitHub Repo</a>
+        </div>
+      </article>
+      <article class="d-flex flex-column a-items-center newsweek-container full-width pad-X-15">
+        <img src="./images/pixel-newsweek-clone.png" alt="Newsweek Website Clone" class="mockup-pics">
+        <div class="d-flex flex-column a-items-center mt-5">
+          <h1 class="project-title text-align-center">Newsweek Website Clone</h1>
+          <p class="mt-5 text-align-center">A fully responsive clone of the main webpage of the Newsweek Website.</p> 
+          <p class="text-align-center">It was made using HTML, CSS and Bootstrap.</p>
+        </div>
+        <div class="pad-Y-5 full-width text-align-center btn-container">
+          <a class ="pixel-btn btn" href="https://newsweek-main-clone.netlify.app/" target="_blank">Live Version</a>
+          <a class ="pixel-btn ml-5 btn" href="https://github.com/ferbaco86/Newsweek-clone" target="_blank">GitHub Repo</a>
+        </div>
+      </article>
+    </main>
+    <footer class="d-flex flex-column a-items-center">
+      <div class="d-flex j-content-center pad-Y-2">
+        <a href="https://github.com/ferbaco86" target ="_blank" class="logo-social-link"><img class="logo-social" src="./images/social_logos_github_2.png" alt="github logo pixel art"></a>
+        <a href="https://www.linkedin.com/in/fernando-bahamondes-correa/" class="ml-5 logo-social-link"><img class="logo-social" src="./images/social_logos_linkedin.png" alt="linkedin logo pixel art"></a>
+        <a href="https://twitter.com/ferbac0" class="ml-5"><img class="logo-social logo-social-link" src="./images/social_logos_twitter.png" alt="twitter logo pixel art"></a>        
+      </div>
+      <small>© 2020 by Fernando Bahamondes. All rights reserved. </small>
+    </footer>
+  </body>
+  <script>
+    var new_scroll_position = 0;
+    var last_scroll_position;
+    var header = document.getElementById("header");
+    
+    window.addEventListener('scroll', function(e) {
+      last_scroll_position = window.scrollY;
+
+    
+      // Scrolling down
+      if (new_scroll_position < last_scroll_position && last_scroll_position > 80) {
+        header.classList.remove("slideDown");
+        header.classList.add("slideUp");
+    
+      // Scrolling up
+      } else if (new_scroll_position > last_scroll_position) {
+        header.classList.remove("slideUp");
+        header.classList.add("slideDown");
+      }
+    
+      new_scroll_position = last_scroll_position;
+    });
+  </script>
+</html>
