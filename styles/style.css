@@ -70,8 +70,7 @@ select {
   font: inherit;
 }
 
-html, 
-body { 
+html { 
   overflow-x: hidden 
 } 
 
