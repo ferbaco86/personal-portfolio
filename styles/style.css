@@ -70,9 +70,10 @@ select {
   font: inherit;
 }
 
-html {
-  overflow-x: hidden;
-}
+html, 
+body { 
+  overflow-x: hidden 
+} 
 
 /* colors */
 
