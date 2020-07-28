@@ -9,7 +9,7 @@
   }
 
   .header-navigation-mobile {
-    display: block !important;
+    display: inline-block !important;
     position: fixed;
     top: 0;
     z-index: 2;
@@ -17,13 +17,21 @@
 
   .menu-icon {
     display: inline-block;
-    background-image: url("../images/menu-icon.png");
-    background-repeat: no-repeat;
-    background-size: contain;
     width: 45px;
     height: 45px;
     cursor: pointer;
     margin: 10%;
+    fill: #d01c1f;;
+  }
+
+  .logo-mobile {
+    width: 60px;
+    margin: 30% 0;
+  }
+
+  .menu-icon:hover {
+    transform: scale(1.1);
+    transition: transform 300ms ease-in-out;
   }
 
   input:checked ~ .nav-mobile {
@@ -45,6 +53,7 @@
     max-width: 0;
     transition: max-width 600ms ease;
   }
+
 }
 
 @media screen and (orientation:landscape) {
@@ -83,16 +92,30 @@
     margin-left: 0;
     margin-top: 5%;
   }
-  
+  .section-about {
+    clip-path: polygon(100% 0, 100% 38%, 89% 73%, 0 80%, 0 0);
+  }
   .project-title {
     font-size: 2em;
   }
 
-  .mockup-pics {
+  .mockup-pics,
+  .gif-container  {
     margin-top: 15%;
   }
 
+  .twitter-gif {
+    margin-top: 0;
+  }
+
 }
+
+@media (max-width: 700px) {
+  .my-name-title {
+    font-size: 4em;
+  }
+}
+
 
 @media (max-width: 600px) {
 
@@ -101,45 +124,15 @@
   }
 
   .about-container-stack {
-    font-size: 1em;
+    font-size: 1.3em;
   }
 
-  .logos-animation {
-    display: none;
+  .recent-work-desc h2 {
+    font-size: 2em;
   }
-
-  .pic-container {
-    max-width: 400px;
-  }
-
-  .logos-animation-mobile-400px {
-    display: block !important;
-    max-width: none;
-    animation: bg-animation 3s steps(33) forwards;
-  }
-
-  .github-work {
-    display: none;
-  }
-
-  @keyframes bg-animation {
-    from { 
-     
-      -webkit-transform: translateX(0);
-      transform:translateX(0);
-     
-    }
-   
-    to {
-      
-      -webkit-transform: translateX(-13200px);
-      transform: translateX(-13200px);
-    }
-     
-   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 440px) {
 
   .my-name-title {
     font-size: 3em;
@@ -147,35 +140,15 @@
 
   .about-container-stack {
     padding: 0 5%;
+    font-size: 1.1em;
   }
 
-  .logos-animation-mobile-400px {
-    display: none !important;
+  .recent-work-desc h2 {
+    font-size: 1.8em;
   }
 
-  .logos-animation-mobile-300px {
-    display: block !important;
-    max-width: none;
-    animation: bg-animation 3s steps(33) forwards;
+  .twitter-gif {
+    min-width: 0;
   }
 
-  @keyframes bg-animation {
-    from { 
-     
-      -webkit-transform: translateX(0);
-      transform:translateX(0);
-     
-    }
-   
-    to {
-      
-      -webkit-transform: translateX(-9900px);
-      transform: translateX(-9900px);
-    }
-     
-   }
-
-   .pic-container {
-    max-width: 300px;
-  }
 }
