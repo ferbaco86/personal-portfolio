@@ -305,6 +305,10 @@ nav {
   display: contents;
 }
 
+.geeksden-container .projects-links {
+  color:#F7DDBB;
+}
+
 .projects-links {
   color: var(--highlight-projects-yellow);
   text-decoration: none;
