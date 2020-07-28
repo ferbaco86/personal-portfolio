@@ -84,7 +84,7 @@ body {
   --nav-bg-color: #f7f4e9;
   --text-color: #f0ebeb;
   --text-color-dark: #1d1d2c;
-  --highlight-projects-blue: #3cbcc3;
+  --highlight-projects-blue: #248d92;
   --highlight-projects-red: #e40c2b;
   --highlight-projects-yellow: #eba63f;
   --highlight-projects-alt: #438945;
@@ -300,12 +300,12 @@ nav {
   text-decoration-color: var(--highlight-projects-alt);
 }
 
-.conference-container .projects-links {
-  color: var(--highlight-projects-yellow);
+.recent-work-desc .projects-links {
+  color: var(--highlight-projects-blue);
 }
 
 .projects-links {
-  color: var(--text-color-dark);
+  color: var(--highlight-projects-yellow);
   text-decoration: none;
 }
 
@@ -372,7 +372,7 @@ button, a {
 
 .logo-social-footer {
   width: 30px;
-  fill: var(--bg-color-lighter);
+  fill: var(--nav-bg-color);
 }
 
 footer {
