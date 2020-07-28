@@ -414,7 +414,7 @@ footer {
 }
 
 .gif-container {
-  background-image: url(/images/chrome-frame.png);
+  background-image: url(./images/chrome-frame.png);
   background-size: cover;
   margin-top: 5%;
   min-width: 300px;
