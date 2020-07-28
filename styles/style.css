@@ -43,7 +43,6 @@ body {
   font-family: 'B612', sans-serif;
   color: var(--text-color);
   background-color: #f7f4e9;
-  /* font-family: 'IBM Plex Serif', serif; */
 }
 
 /* A elements that don't have a class get default styles */
@@ -71,8 +70,14 @@ select {
 }
 
 html { 
-  overflow-x: hidden 
-} 
+  overflow-x: hidden;
+}
+
+html,
+body {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
 
 /* colors */
 
@@ -388,6 +393,7 @@ footer {
   min-height: 350px;
   min-width: 600px;
   overflow-x: hidden;
+  -webkit-clip-path: polygon(100% 0, 100% 38%, 89% 73%, 0 50%, 0 0);
   clip-path: polygon(100% 0, 100% 38%, 89% 73%, 0 50%, 0 0);
   background-color: var(--bg-color-dark);
   padding-bottom: 30%;
@@ -414,7 +420,7 @@ footer {
 }
 
 .gif-container {
-  background-image: url(./images/chrome-frame.png);
+  background-image: url(../images/chrome-frame.png);
   background-size: cover;
   margin-top: 5%;
   min-width: 300px;
@@ -432,17 +438,17 @@ footer {
 
 .geeksden-container {
   background-color: var(--bg-color-light);
-  /* clip-path: polygon(0 9%, 100% 0, 100% 100%, 0% 100%); */
-  
 }
 
 .geeksden-container,
 .conference-container {
+  -webkit-clip-path: polygon(100% 0, 100% 95%, 0 100%, 0 5%);
   clip-path: polygon(100% 0, 100% 95%, 0 100%, 0 5%);
 }
 
 .tweetbot-container,
 .newsweek-container {
+  -webkit-clip-path: polygon(100% 0, 100% 95%, 0 100%, 0 5%);
   clip-path: polygon(100% 5%, 100% 100%, 0 95%, 0 0);
 }
 
