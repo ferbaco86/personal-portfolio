@@ -86,6 +86,10 @@ html {
   --highlight-projects-alt: #438945;
   --border-nav: #d01c1f;
   --bg-color-dark: #0d0c1d;
+  --bg-color-med-dark: #161b33;
+  --bg-color-light-dark: #474973;
+  --bg-color-light:#a69cac;
+  --bg-color-lighter: #f1dac4;
 }
 
 /* display */
@@ -298,65 +302,50 @@ h2 {
   font-size: 2.5em;
 }
 
+.btn-projects {
+  box-shadow: 0 3px 0 0 #cf9235, 0 4px 4px -1px rgba(0, 0, 0, 0.6), 0 4px 6px 1px rgba(0, 0, 0, 0.3), 0 1px 2px 1px transparent inset, 0 18px 32px -2px rgba(255, 255, 255, 0.1) inset;
+  background-color: var(--highlight-projects-yellow);
+  color: #E6EAEF;
+}
+
+.btn-projects:hover {
+  box-shadow: 0 3px 0 0 #cf9235, 0 6px 4px -1px rgba(0, 0, 0, 0.3), 0 4px 16px rgba(0, 0, 0, 0.5), 0 1px 2px 1px transparent inset, 0 18px 32px -2px rgba(255, 255, 255, 0.14) inset;
+}
+
+.btn-projects:active {
+  box-shadow: 0 0px 0 0 #5e3e10, 0 3px 0 0 transparent, 0 4px 16px transparent, 0 1px 2px 1px rgba(0, 0, 0, 0.5) inset, 0 -18px 32px -2px rgba(255, 255, 255, 0.1) inset;
+  transition: 0s;
+  color: #ac7626;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.btn:active {
+  transform: translateY(3px);
+}
+
 .btn {
   padding: 1em 1.8em;
   text-decoration: none;
   color: var(--text-color-dark);
-  font-weight: 700;
+  font-weight: normal;
+  display: inline-block;
+  margin: 6px;
+  border-width: 0;
+  border-style: solid;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: bottom;
+  transition: box-shadow 0.2s, transform 0.2s, color 0.2s;
 }
 
-@supports (border-image-source: none) {
-  .pixel-btn {
-    border-radius: 14px;
-  }
-}
-
-.pixel-btn:active {
-  background-color: #f7d51d;
-  -webkit-box-shadow: inset 4px 4px #ebe4bd;
-          box-shadow: inset 4px 4px #ebe4bd;
+button, a {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .logo {
   width: 100px;
 }
-
-.pixel-btn {
-  border-style: solid;
-  border-width: 4px;
-  border-color: #a88f06;
-  border-image-slice: 2;
-  border-image-width: 1;
-  border-image-outset: 0;
-  border-image-source: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='6' height='6'><path d='M0 2h2v2H0zM2 0h2v2H2zM4 2h2v2H4zM2 4h2v2H2z' fill='%23a88f06' /></svg>");
-  position: relative;
-  background-color: #f7d51d;
- }
-
- .pixel-btn::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  -webkit-box-shadow: inset -4px -4px #d9b908;
-          box-shadow: inset -4px -4px #d9b908;
- }
-
- .pixel-btn:hover {
-  color: var(--text-color-dark);
-  text-decoration:none;
-  background-color:#f2c409;
- }
-
- .pixel-btn:hover::after {
-  box-shadow:inset -6px -6px #d9b908;
- }
-
- .pixel-btn:active::after {
-  box-shadow:inset 4px 4px #ebe4bd;
- }
 
 .logo-social {
   width: 40px;
@@ -364,6 +353,11 @@ h2 {
 
 .logo-social-footer {
   width: 30px;
+  fill: var(--bg-color-lighter);
+}
+
+footer {
+  background-color: var(--bg-color-dark);
 }
 
 .logo-social-link:hover,
@@ -399,7 +393,7 @@ h2 {
 
 .recent-work-desc {
   color: var(--text-color-dark);
-  background-color: #f1dac4;
+  background-color: var(--bg-color-lighter);
   text-align: center;
   padding: 5% 15%;
   margin-top: -28%;
@@ -426,11 +420,11 @@ h2 {
 }
 
 .conference-container {
-  background-color: var(--highlight-projects-alt);
+  background-color: var(--bg-color-med-dark);
 }
 
 .geeksden-container {
-  background-color: var(--highlight-projects-yellow);
+  background-color: var(--bg-color-light);
   clip-path: polygon(0 9%, 100% 0, 100% 100%, 0% 100%);
   padding-top: 5%;
 }
@@ -441,11 +435,11 @@ h2 {
 }
 
 .newsweek-container {
-  background-color: var(--highlight-projects-red);
+  background-color: var(--bg-color-light-dark);
 }
 
 .tweetbot-container {
-  background-color: var(--highlight-projects-blue);
+  background-color: var(--bg-color-dark);
 }
 
 .project-title {
@@ -453,7 +447,8 @@ h2 {
 }
 
 .contact {
-  background-color: var(--highlight-projects-alt);
+  background-color: var(--bg-color-lighter);
+  color: var(--text-color-dark);
 }
 
 .hide-text {
