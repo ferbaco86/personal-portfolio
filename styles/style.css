@@ -75,7 +75,6 @@ html {
 
 html,
 body {
-  overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
 }
 
@@ -93,7 +92,7 @@ body {
   --bg-color-dark: #0d0c1d;
   --bg-color-med-dark: #161b33;
   --bg-color-light-dark: #474973;
-  --bg-color-light:#a69cac;
+  --bg-color-light:#8e7d97;
   --bg-color-lighter: #f1dac4;
 }
 
@@ -301,6 +300,10 @@ nav {
   text-decoration-color: var(--highlight-projects-alt);
 }
 
+.conference-container .projects-links {
+  color: var(--highlight-projects-yellow);
+}
+
 .projects-links {
   color: var(--text-color-dark);
   text-decoration: none;
@@ -361,6 +364,10 @@ button, a {
 
 .logo-social {
   width: 40px;
+}
+
+.logo-social-link {
+  width: 30px;
 }
 
 .logo-social-footer {
@@ -448,7 +455,7 @@ footer {
 
 .tweetbot-container,
 .newsweek-container {
-  -webkit-clip-path: polygon(100% 0, 100% 95%, 0 100%, 0 5%);
+  -webkit-clip-path: polygon(100% 5%, 100% 100%, 0 95%, 0 0);
   clip-path: polygon(100% 5%, 100% 100%, 0 95%, 0 0);
 }
 

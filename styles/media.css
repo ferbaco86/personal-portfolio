@@ -4,6 +4,11 @@
     overflow-x: hidden;
   }
 
+  html,
+  body {
+    overflow-y: scroll;
+  }
+
   .header-navigation {
     display: none !important;
   }
@@ -17,8 +22,8 @@
 
   .menu-icon {
     display: inline-block;
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40 px;
     cursor: pointer;
     margin: 10%;
     fill: #d01c1f;;
@@ -30,7 +35,7 @@
   }
 
   input:checked ~ .nav-mobile {
-    max-width: 100vw;
+    width: 15vw;
   }
 
   .nav-mobile {
@@ -38,15 +43,15 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 0;
-    transition: max-width 600ms ease;
+    width: 0;
+    transition: width 600ms ease;
     position: relative;
     overflow: hidden;
     background-color: rgba(247, 244, 233, 0.6);  }
 
 }
 
-/* @media screen and (orientation:landscape) {
+@media screen and (max-width: 900px) and (orientation:landscape) {
   
   .header-navigation-mobile {
     display: flex !important;
@@ -56,16 +61,15 @@
     display: flex !important;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    max-width: 0;
-    transition: max-width 600ms ease;
+    justify-content: space-evenly;
+    width: 0;
+    transition: width 600ms ease;
   }
 
-  .nav-mobile div {
-    display: flex;
-    flex-direction: row;
+  input:checked ~ .nav-mobile {
+    width: 60vw;
   }
-} */
+}
 
 @media (max-width: 768px) {
   .logo {
