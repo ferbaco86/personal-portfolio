@@ -11,7 +11,9 @@ My Personal Portfolio. A responsive website constructed with HTML5, CSS and a ta
 
 ## Screenshot
 
-![Screenshot_full](./images/readme-screenshot.png)
+![Screenshot_full](./images/laptop_screen.png)
+![Screenshot_mobile](./images/mob-screen.png)
+
 
 ## Live Demo
 
