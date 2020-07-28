@@ -281,7 +281,7 @@ body {
 }
 
 nav {
-  background-color: rgba(247, 244, 233, 1);
+  background-color: var(--nav-bg-color);
   color: var(--text-color);
 }
 
@@ -302,6 +302,7 @@ nav {
 
 .recent-work-desc .projects-links {
   color: var(--highlight-projects-blue);
+  display: contents;
 }
 
 .projects-links {

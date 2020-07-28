@@ -87,6 +87,7 @@
     margin-top: 5%;
   }
   .section-about {
+    -webkit-clip-path: polygon(100% 0, 100% 38%, 89% 73%, 0 80%, 0 0);
     clip-path: polygon(100% 0, 100% 38%, 89% 73%, 0 80%, 0 0);
   }
   .project-title {
