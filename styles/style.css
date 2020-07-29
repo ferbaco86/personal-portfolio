@@ -42,7 +42,7 @@ body {
   line-height: 1.5;
   font-family: 'B612', sans-serif;
   color: var(--text-color);
-  background-color: #f7f4e9;
+  background-color: var(--bg-color-lighter);
 }
 
 /* A elements that don't have a class get default styles */
@@ -81,7 +81,6 @@ body {
 /* colors */
 
 :root {
-  --nav-bg-color: #f7f4e9;
   --text-color: #f0ebeb;
   --text-color-dark: #1d1d2c;
   --highlight-projects-blue: #248d92;
@@ -93,7 +92,7 @@ body {
   --bg-color-med-dark: #161b33;
   --bg-color-light-dark: #474973;
   --bg-color-light:#6f557e;
-  --bg-color-lighter: #f1dac4;
+  --bg-color-lighter: #fff;
 }
 
 /* display */
@@ -281,7 +280,7 @@ body {
 }
 
 nav {
-  background-color: var(--nav-bg-color);
+  background-color: var(--bg-color-lighter);
   color: var(--text-color);
 }
 
@@ -377,7 +376,7 @@ button, a {
 
 .logo-social-footer {
   width: 30px;
-  fill: var(--nav-bg-color);
+  fill: var(--bg-color-lighter);
 }
 
 footer {
