@@ -86,10 +86,7 @@
     margin-left: 0;
     margin-top: 5%;
   }
-  .section-about {
-    -webkit-clip-path: polygon(100% 0, 100% 38%, 89% 73%, 0 80%, 0 0);
-    clip-path: polygon(100% 0, 100% 38%, 89% 73%, 0 80%, 0 0);
-  }
+  
   .project-title {
     font-size: 2em;
   }
@@ -97,6 +94,12 @@
   .mockup-pics,
   .gif-container  {
     margin-top: 15%;
+  }
+
+  .conference-container,
+  .tweetbot-container,
+  .newsweek-container {
+    margin-top: -12%;
   }
 
   .twitter-gif {

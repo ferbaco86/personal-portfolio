@@ -42,7 +42,7 @@ body {
   line-height: 1.5;
   font-family: 'B612', sans-serif;
   color: var(--text-color);
-  background-color: var(--bg-color-lighter);
+  background-color: var(--bg-color-dark);
 }
 
 /* A elements that don't have a class get default styles */
@@ -404,9 +404,6 @@ footer {
   min-height: 350px;
   min-width: 600px;
   overflow-x: hidden;
-  -webkit-clip-path: polygon(100% 0, 100% 38%, 89% 73%, 0 50%, 0 0);
-  clip-path: polygon(100% 0, 100% 38%, 89% 73%, 0 50%, 0 0);
-  background-color: var(--bg-color-dark);
   padding-bottom: 30%;
 }
 
@@ -418,16 +415,18 @@ footer {
 .recent-work-desc {
   color: var(--text-color-dark);
   background-color: var(--bg-color-lighter);
+  border-bottom: 5px solid var(--bg-color-light-dark);
   text-align: center;
   padding: 5% 15%;
   margin-top: -28%;
-  box-shadow: 0 1px 1px rgba(0,0,0,0.25),
-              0 2px 2px rgba(0,0,0,0.2),
-              0 4px 4px rgba(0,0,0,0.15),
-              0 8px 8px rgba(0,0,0,0.1),
-              0 16px 16px rgba(0,0,0,0.05);
   z-index: 1;
   width: 80%;
+}
+
+.recent-work-desc,
+.contact {
+  border-bottom: 5px solid var(--bg-color-light-dark);
+  border-radius: 15px;
 }
 
 .gif-container {
@@ -451,16 +450,23 @@ footer {
   background-color: var(--bg-color-light);
 }
 
+.conference-container,
+.tweetbot-container,
+.newsweek-container {
+  margin-top: -5%;
+}
+
 .geeksden-container,
 .conference-container {
-  -webkit-clip-path: polygon(100% 0, 100% 95%, 0 100%, 0 5%);
-  clip-path: polygon(100% 0, 100% 95%, 0 100%, 0 5%);
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 5%); 
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 5%);
 }
+  
 
 .tweetbot-container,
 .newsweek-container {
-  -webkit-clip-path: polygon(100% 5%, 100% 100%, 0 95%, 0 0);
-  clip-path: polygon(100% 5%, 100% 100%, 0 95%, 0 0);
+  -webkit-clip-path: polygon(100% 5%, 100% 100%, 0 100%, 0 0);
+  clip-path: polygon(100% 5%, 100% 100%, 0 100%, 0 0);
 }
 
 .mockup-pics {
